@@ -1,0 +1,10 @@
+article {
+    width: 50%;
+    float: left;
+}
+
+#topRight {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
