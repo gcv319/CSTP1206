@@ -1,0 +1,112 @@
+p {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: serif;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: serif;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: sans-serif;
+    background-color: yellow;
+    text-align: center;
+    margin: 0px;
+}
+
+sup{
+    vertical-align: super;
+    font-size: 10px;
+}
+
+#header {
+    height: 20%;
+    padding: 5vh;
+}
+
+#main {
+    height: 60%;
+}
+
+#footer {
+    height: 20%;
+    padding: 5vh;
+}
+
+#websitenav {
+    width: 15%;
+    float: left;
+    background-color: whitesmoke;
+    margin-top: 3vh;
+    padding-top: 20vh;
+}
+
+#navMenu {
+    padding: 25px;
+}
+
+#content {
+    width: 85%;
+    float: right;
+}
+
+#contentPadding{
+    padding-left: 3vw;
+    padding-right: 1vw;
+}
+
+#bodyContent{
+    padding-top: 50px;
+}
+#contentnav {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 150px;
+    height: 200px;
+}
+
+#infobox {
+    border: 1px solid black;
+    float: right;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+td {
+    font-family: sans-serif;
+}
+
+li {
+    font-family: sans-serif;
+}
+
+ul {
+    font-family: sans-serif;
+}
+
+#img1 {
+    width: 250px;
+    height: 250px;
+    float: right;
+}
+
+.ul1 {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    font: grey;
+    font-size: 14px;
+}
+
+.smallTxt {
+    font-size: 12px;
+    font-family: sans-serif;
+}
