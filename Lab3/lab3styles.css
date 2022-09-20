@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    background-color: darkred;
+    font-size: 500%;
+}
+
+li {
+    color: red;
+    font-size: 100%;
+}
