@@ -1,0 +1,17 @@
+.container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 10px
+}
+
+.green {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 10px
+}
+
+.hidden {
+    display: none
+}
