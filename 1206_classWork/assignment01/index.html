@@ -13,9 +13,9 @@
     <div class="infoInput">
         <h1>Please Enter Your Information</h1>
         <form>
-            <input class="name" type="text-box" placeholder="Enter your name">
-            <input class="email" type="text-box" placeholder="Enter your email">
-            <input class="student_id" type="text-box" placeholder="Enter your student id">
+            <input id="studentName" type="text-box" placeholder="Enter your name" value="">
+            <input id="studentEmail" type="text-box" placeholder="Enter your email" value="">
+            <input id="studentID" type="text-box" placeholder="Enter your student id" value="">
         </form>
 
         <button type="button" id="enterButton">Enter Information</button>
@@ -24,7 +24,13 @@
     <div class="infoOutput">
         <h1>User Information</h1>
         <table id="userInfo">
-            <td><th>Name</th><th>Email</th><th>Student ID</th></td>
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Student ID</th>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>
