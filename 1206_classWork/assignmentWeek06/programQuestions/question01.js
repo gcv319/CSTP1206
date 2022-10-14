@@ -1,3 +1,4 @@
+// This is the object which contains the students info
 let student = [
     {
         name: "Daniel",
@@ -21,10 +22,31 @@ let student = [
     }
 ];
 
+// This function finds the student with the highest total marks and returns it
 function studentWithHighestMarks(array) {
+    // variables which we will use to help determine who has the highest mark
+    let highestMarks = [];
+    let topStudent;
+    let totalMarks = 0;
+
+    // This for in loop puts the total marks of each student into an array
     for (let key in array) {
-        console.log(array[key]);
+        totalMarks = 0;
+        for (let score in array[key].marks) {
+            totalMarks += array[key].marks[score];
+        }
+        highestMarks[key] = totalMarks;
     }
+
+    // we go through the array with the total marks and returns the person who has the highest marks
+    for (let mark in highestMarks) {
+        if (highestMarks[mark] >= totalMarks) {
+            totalMarks = highestMarks[mark];
+            topStudent = student[mark].name;
+        }
+    }
+
+    return topStudent;
 }
 
-studentWithHighestMarks(student);
+console.log(studentWithHighestMarks(student));
