@@ -40,9 +40,9 @@ array.forEach(printValue);
 
 // MAP FUNCTION
 
-let numArray = [1,2,3,4,5];
+let numArray = [1, 2, 3, 4, 5];
 
-let newArray = numArray.map(function(item, index) {
+let newArray = numArray.map(function (item, index) {
     return item * 2;
 })
 
@@ -93,7 +93,7 @@ console.log(modifiedArray);
 
 // FILTER FUNCTION
 
-let num2Array = [1,2,3,4,5];
+let num2Array = [1, 2, 3, 4, 5];
 
 let new2Array = num2Array.filter((num) => {
     if (num % 2 === 0) {
@@ -104,7 +104,7 @@ let new2Array = num2Array.filter((num) => {
 console.log(num2Array, "ORIGINAL ARRAY");
 console.log(new2Array, "NEW ARRAY");
 
-let passedStudents = modifiedArray.filter(function(student) {
+let passedStudents = modifiedArray.filter(function (student) {
     if (student.grade === "PASS") {
         return true;
     }
@@ -121,7 +121,7 @@ console.log(failedStudents);
 // REDUCE FUNCTION
 
 let sum = 0;
-let array1 = [1,20,3,4,5];
+let array1 = [1, 20, 3, 4, 5];
 for (let i = 0; i < array1.length; i++) {
     sum = sum + array1[i];
 }
@@ -175,3 +175,75 @@ for (let key in obj) {
     console.log(obj[key]);
     // console.log(obj.key) We cannot do this since we are searching for "Key" and that doesn't exist
 }
+
+// FIND FUNCTION
+
+let numericArray = [5, 3, 4, 23, 11, 2];
+
+const foundValue = numericArray.find((num) => {
+    if (num === 23) {
+        return true;
+    }
+});
+
+const foundValue2 = numericArray.find((num) => {
+    if (num === 100) {
+        return true;
+    }
+});
+
+console.log(foundValue, "FOUND VALUE");
+console.log(foundValue2, "FOUND VALUE");
+
+
+const articles = [
+    {
+        id: Math.random().toFixed(2),
+        title: "Latest Tech",
+        author: "Prabh",
+        timeRequired: "2 minutes",
+        description: "This is an article for latest technologies for example - BlockChain, IOT"
+    },
+    {
+        id: Math.random().toFixed(2),
+        title: "Life in Vancouver",
+        author: "Prabh",
+        timeRequired: "1 minutes",
+        description: "Vancouver is known for its natural beauty and its fun living here"
+    }
+]
+
+const findArticle = articles.find((item) => {
+    if (item.title === "Life in Vancouver") {
+        return true;
+    }
+})
+
+const findArticleByTime = articles.find((item) => {
+    if (item.timeRequired === "2 minutes") {
+        return true;
+    }
+})
+
+console.log(findArticle, "FOUND VALUE");
+console.log(findArticleByTime, "FOUND VALUE BY TIME REQUIRED");
+
+// FIND INDEX FUNCTION
+
+const index = articles.findIndex((article) => {
+    if (article.title === "Life in Vancouver") {
+        return true;
+    }
+})
+
+console.log(index, "Index value found");
+
+// SPLICE FUNCTION - Splice method can be used to either add elements or delete elements from the array
+
+let numA = [1, 2, 3, 4, 5];
+
+// Array.splice(starting Index, Number of elements of you want to delete, items you want to add)
+
+numA.splice(0, 2, 20, 40, 60);
+
+console.log(numA);

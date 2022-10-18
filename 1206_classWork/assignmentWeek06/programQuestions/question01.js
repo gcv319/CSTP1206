@@ -26,7 +26,7 @@ let student = [
 function studentWithHighestMarks(array) {
     // variables which we will use to help determine who has the highest mark
     let highestMarks = [];
-    let topStudent;
+    let topStudent = 'mark';
     let totalMarks = 0;
 
     // This for in loop puts the total marks of each student into an array
