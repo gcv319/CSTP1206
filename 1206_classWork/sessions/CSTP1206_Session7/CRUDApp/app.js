@@ -8,7 +8,7 @@ const PORT = 5000;
 // U --> Update
 // D --> Delete
 
-const articles = [
+let articles = [
   {
     id: 1,
     title: "Latest Tech",
@@ -134,7 +134,7 @@ app.put("/api/v1/posts/:id", (req, res) => {
     return post;
   })
 
-  return res.status(201).json({
+  return res.status(200).json({
     message: "Successfully fetched the article",
     data: articles
   })
