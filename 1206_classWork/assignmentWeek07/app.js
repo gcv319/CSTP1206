@@ -2,6 +2,12 @@ const express = require('express');
 const PORT = 4000;
 const app = express();
 
+let userInfo = {
+  name: "Gio",
+  email: "gio@vcc.ca",
+  date: new Date()
+}
+
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
