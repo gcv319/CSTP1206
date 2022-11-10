@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Document</title>
 </head>
 
 <body>
-  <% for (let key in data) { %>
-    <% if (key !=="social" ) { %>
-      <p>
-        <%- data[key] %>
-      </p>
-      <% } %>
-        <% } %>
-
-          <% for (let item in data.social) { %>
-            <a href=<%- data.social[item] %>>
-              <img src=<%- item %>
-              width="50px" height="50px">
-            </a>
+  <div>
+    <h1>Hotel Gian</h1>
+    <div>
+      <p>Congratulations!</p>
+      <% for (let key in data) { %>
+        <% if (key !=="social" ) { %>
+          <p>
+            <%- data[key] %>
+          </p>
+          <% } %>
             <% } %>
+              <p>Your account has been created</p>
+              <% for (let item in data.social) { %>
+                <a href=<%- data.social[item] %>>
+                  <img src=<%- item %>
+                  width="50px" height="50px">
+                </a>
+                <% } %>
+    </div>
+  </div>
 </body>
 
 </html>
