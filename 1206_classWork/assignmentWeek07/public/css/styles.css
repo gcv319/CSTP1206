@@ -1,7 +1,22 @@
 h1 {
-  color: #4287f5;
+  background-color: #045c54;
+  color: #ffffff;
+  text-align: center;
 }
 
-body {
-  background-color: #42f593;
+.info {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-style: groove;
+  border-width: 5px;
+  border-radius: 25px;
+  background-color: #22e6d5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }

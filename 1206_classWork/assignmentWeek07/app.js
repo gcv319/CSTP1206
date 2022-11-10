@@ -19,7 +19,7 @@ let userInfo = {
   phoneNumber: "number: " + 6041237890,
   social: {
     "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png": "https://www.instagram.com/",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4n_urpJ9XpwOTdzBVbGvactwHrPagYQrTJPYjxfxLGkSyu7nJZVqRVGAeohnPgKMrnKE&usqp=CAU": "https://twitter.com/",
+    "https://upload.wikimedia.org/wikipedia/sco/thumb/9/9f/Twitter_bird_logo_2012.svg/2534px-Twitter_bird_logo_2012.svg.png": "https://twitter.com/",
     "https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png": "https://www.facebook.com/"
   }
 }
