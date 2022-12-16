@@ -17,14 +17,16 @@
   <div class="userCards" user-card-container>
     <template data-user-template>
       <div class="card">
-        <a id="issueLink" data-issueLink>
-          <span class="cardLink">
-            <a id="userLink" target="_blank" data-userLink><img id="userPfp" data-userPfp width="100px"
-                height="100px"></a>
-            <div class="issue" data-issue></div>
-            <div class="tags" data-tags></div>
-          </span>
-        </a>
+        <a class="overlay" id="issueLink" data-issueLink></a>
+        <div class="inner">
+          <a id="userLink" target="_blank" data-userLink>
+            <span>
+              <img id="userPfp" data-userPfp width="100px" height="100px">
+            </span>
+          </a>
+        </div>
+        <div class="issue" data-issue></div>
+        <div class="tags" data-tags></div>
       </div>
     </template>
   </div>
