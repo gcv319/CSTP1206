@@ -18,9 +18,13 @@ fetch("https://api.github.com/repos/facebook/react/issues")
     users = data.map(element => {
       let objLabels = [];
       const card = userCardTemplate.content.cloneNode(true).children[0];
+      const issueLink = card.querySelector("[data-issueLink]");
+      const userLink = card.querySelector("[data-userLink]");
       const pfp = card.querySelector("[data-userPfp]");
       const issue = card.querySelector("[data-issue]");
       const tags = card.querySelector("[data-tags]");
+      issueLink.href = element.html_url;
+      userLink.href = element.user.html_url;
       pfp.src = element.user.avatar_url;
       issue.textContent = element.title;
       element.labels.forEach(label => {
@@ -30,4 +34,5 @@ fetch("https://api.github.com/repos/facebook/react/issues")
       userCardContainer.append(card);
       return { issue: element.title, tags: objLabels, element: card }
     });
+    console.log(data);
   });

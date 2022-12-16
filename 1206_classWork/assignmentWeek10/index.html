@@ -17,9 +17,14 @@
   <div class="userCards" user-card-container>
     <template data-user-template>
       <div class="card">
-        <img id="userPfp" data-userPfp width="100px" height="100px">
-        <div class="issue" data-issue></div>
-        <div class="tags" data-tags></div>
+        <a id="issueLink" data-issueLink>
+          <span class="cardLink">
+            <a id="userLink" target="_blank" data-userLink><img id="userPfp" data-userPfp width="100px"
+                height="100px"></a>
+            <div class="issue" data-issue></div>
+            <div class="tags" data-tags></div>
+          </span>
+        </a>
       </div>
     </template>
   </div>
