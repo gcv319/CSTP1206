@@ -32,12 +32,13 @@ input {
 }
 
 .card>.issue {
+  font-size: 1rem;
   margin-bottom: .25rem;
   text-align: center;
 }
 
 .card>.tags {
-  font-size: .8rem;
+  font-size: 1rem;
   color: #FFFF;
   text-align: center;
 }
